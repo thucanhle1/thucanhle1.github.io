@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Thục Anh - Academic Profile</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lê Thục Anh — Undergraduate Student</title>
+  <meta name="description" content="Lê Thục Anh — International Business Economics student at FTU. Logistics & Supply Chain." />
+
+  <style>
+    :root{
+      --accent:#0b63d6;
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111;}
+    .container{max-width:var(--maxw); margin:32px auto; padding:0 20px;}
+    header{display:flex; gap:20px; align-items:center; background:var(--card); padding:24px; border-radius:12px; box-shadow:0 6px 18px rgba(15,23,42,0.06);}
+    .avatar{width:120px; height:120px; border-radius:12px; background:#e6eefc; display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--accent); font-size:28px;}
+    h1{margin:0; font-size:28px;}
+    .title{color:var(--muted); margin-top:6px;}
+    .actions{margin-left:auto; display:flex; gap:10px; align-items:center;}
+    .btn{background:var(--accent); color:#fff; padding:8px 12px; border-radius:8px; text-decoration:none; font-weight:600;}
+    main{margin-top:22px; display:grid; grid-template-columns: 1fr 340px; gap:20px;}
+    @media (max-width:880px){ main{grid-template-columns:1fr} .actions{margin-left:0}}
+    .card{background:var(--card); padding:18px; border-radius:10px; box-shadow:0 6px 18px rgba(15,23,42,0.04);}
+    .section-title{display:flex; align-items:center; gap:10px; margin-bottom:12px}
+    .section-title h2{margin:0; font-size:18px;}
+    .muted{color:var(--muted);}
+    ul{padding-left:18px}
+    .project{margin-bottom:14px}
+    .project img{width:100%; border-radius:8px; margin-top:8px;}
+    .contact-list p{margin:6px 0}
+    .download-cv{display:inline-block; margin-top:8px; text-decoration:none; padding:8px 10px; border-radius:8px; background:#111; color:#fff;}
+    footer{margin-top:26px; text-align:center; color:var(--muted); font-size:14px;}
+    .tag{display:inline-block; padding:6px 8px; background:#eef6ff; color:var(--accent); border-radius:999px; font-weight:600; margin-right:8px; font-size:13px}
+    .meta{font-size:13px; color:var(--muted); margin-top:8px}
+  </style>
 </head>
 <body>
-    <h1>Welcome to my academic webpage</h1>
-    <p>This site is under construction.</p>
+  <div class="container">
+    <header>
+      <!-- Avatar: nếu chưa có ảnh, tên viết tắt sẽ hiện -->
+      <div class="avatar" id="avatar">LT</div>
+
+      <div>
+        <h1>Lê Thục Anh</h1>
+        <div class="title">Undergraduate Student — International Business Economics</div>
+        <div class="meta">Logistics & Supply Chain • Foreign Trade University</div>
+        <div class="meta" style="margin-top:8px">Former: Deputy Head, Strategic Planning Dept, International Business Club</div>
+      </div>
+
+      <div class="actions">
+        <!-- Link to CV (file you will upload, see instructions) -->
+        <a class="btn" href="Le-Thuc-Anh-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card">
+          <div class="section-title"><h2>Giới thiệu</h2></div>
+          <p>
+            I'm an International Business Economics student at Foreign Trade University, specializing in research and analytical work across areas of international business and logistics—including trade agreements, supply chain optimization, and emerging market trends. Previously, as Deputy Head of the Strategic Planning Department of the International Business Club at FTU, I contributed to shaping and refining the club’s long-term vision, mission, and strategic goals.
+          </p>
+
+          <div style="margin-top:16px">
+            <span class="tag">Logistics</span>
+            <span class="tag">Supply chain</span>
+            <span class="tag">Research</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title"><h2>Kinh nghiệm & Học vấn</h2></div>
+
+          <h3 style="margin:6px 0 4px 0">Education</h3>
+          <p class="muted" style="margin-top:0">Foreign Trade University — International Business Economics (Oct 2023 — Present)</p>
+          <p class="muted">GPA: 3.53 / 4.0</p>
+
+          <h3 style="margin-top:12px; margin-bottom:6px">Experience</h3>
+          <ul>
+            <li><strong>International Business Club</strong> — Vice Head of Strategic Planning Department (Sep 2024 — Present)
+              <div class="muted">Prepare format & contents for nationwide Supply Chain competition INTERCHAIN 2025; recruit & manage team; work with judges & partners.</div>
+            </li>
+            <li style="margin-top:8px"><strong>International Business Club</strong> — Member, Strategic Planning Department (Nov 2023 — Aug 2024)
+              <div class="muted">Lead team organizing Logistics contest Vietnam Young Logistics Talents 2024 (FTU Round), run webinars series INTERCHAIN 2024.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title"><h2>Projects / Portfolio</h2></div>
+
+          <div class="project">
+            <h4>INTERCHAIN event series — FTU rounds</h4>
+            <p class="muted">Format design, content & event management for logistics & supply chain competitions and webinars.</p>
+          </div>
+
+          <div class="project">
+            <h4>Vietnam Young Logistics Talents 2024 — FTU Round</h4>
+            <p class="muted">Led a 5-member team; attracted 60 teams (240 contestants).</p>
+          </div>
+
+          <!-- You can add project images later in /images/ -->
+        </div>
+      </section>
+
+      <aside>
+        <div class="card contact-list">
+          <div class="section-title"><h2>Liên hệ</h2></div>
+          <p><strong>Email:</strong> <a href="mailto:lethucanh.work@gmail.com">lethucanh.work@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/th%E1%BB%A5c-anh-l%C3%AA-8793782a1" target="_blank" rel="noopener">LinkedIn profile</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/thucanhle1" target="_blank" rel="noopener">github.com/thucanhle1</a></p>
+
+          <a class="download-cv" href="Le-Thuc-Anh-CV.pdf" target="_blank" rel="noopener">Tải CV (PDF)</a>
+
+          <div style="margin-top:14px">
+            <div class="section-title"><h2>Ngoài ra</h2></div>
+            <p class="muted">Thêm ảnh cá nhân trong thư mục <code>/images/avatar.jpg</code> để thay avatar; tên file và đường dẫn có phân biệt chữ hoa thường.</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="section-title"><h2>Quick Links</h2></div>
+          <p><a href="#portfolio">Projects</a> • <a href="#about">About</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Lê Thục Anh — Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    // Fill year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // If no avatar image provided, keep initials (LT). If you upload /images/avatar.jpg, change this to show image:
+    (function(){
+      var img = '/images/avatar.jpg';
+      // we won't attempt to fetch; instructions below will tell how to replace
+    })();
+  </script>
 </body>
 </html>
